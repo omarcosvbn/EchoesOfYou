@@ -5,12 +5,6 @@ public class Npc : MonoBehaviour{
     [SerializeField] Transform player;
     [SerializeField] float imageScale = 1f;
 
-    [SerializeField] SpriteRenderer spriteRenderer;
-
-    void Start(){
-        spriteRenderer.sprite = image;
-    }
-
     void Update(){
         Vector3 direction = player.position - transform.position;
         direction.y = 0f;
